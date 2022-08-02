@@ -16,13 +16,6 @@ h6 {
     margin: 0;
 }
 
-.img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-
 ul {
     margin: 0;
     padding-left: 0;
@@ -46,6 +39,13 @@ button {
     cursor: pointer;
 
 }
+.img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 /* Head */
 .container {
@@ -66,8 +66,8 @@ button {
 }
 
 .header {
-    background-color: #FFFFFF;
-
+    border: 1px solid #ECECEC;
+    background-color: var(--normal-color)
 }
 
 .main-nav {
@@ -76,11 +76,14 @@ button {
 }
 
 
+.nav {
+    display: flex;
+    margin-left: auto;
+    margin-left: 93px;
+}
 
 .header-list {
-    margin-left: 93px;
     display: flex;
-
 }
 
 .header-list .item+.item {
@@ -88,12 +91,12 @@ button {
 
 }
 
-.nav {
+.navig {
     display: flex;
-    margin-left: auto;
+    margin-left:auto
 }
 
-.nav .item+.item {
+.navig .item+.item {
     margin-left: 50px;
 }
 
@@ -105,7 +108,7 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--minor-color)
 }
 
 .logo {
@@ -117,7 +120,7 @@ button {
     line-height: 1.71;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color)
 }
 
 
@@ -130,7 +133,7 @@ button {
     line-height: 1.71;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: black;
+    color: var(--primary-color)
 }
 
 
@@ -144,16 +147,21 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121
+    color: var(--primary-color)
 }
+
 
 .header-link:hover,
 .header-link:focus {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #2196F3
+    color: var(--accent-color)
+}
+
+.current {
+    color: var(--accent-color)
 }
 
 .header-nav:hover,
@@ -163,30 +171,32 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--accent-color)
 }
+
+
 
 
 
 
 
 .start {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     text-align: center;
-    height: 600px;
     background: #2F303A;
-    
+
 }
 
 
 
 .start-title {
+    text-transform: uppercase;
     max-width: 696px;
     display: block;
-    padding-top: 200px;
 
-
-
-
+    margin: 0 auto;
     margin-bottom: 30px;
 
 
@@ -201,12 +211,7 @@ button {
 .start-button {
 
     padding: 10px 32px;
-
-
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -217,7 +222,7 @@ button {
 }
 
 .start-button:focus {
-    background: #2196F3;
+    background: rgba(33, 150, 243, 1);
     color: #FFFFFF;
 }
 
@@ -227,13 +232,13 @@ button {
 .information {}
 
 .information-list {
-    margin-top: 93px;
+
     display: flex;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: #212121
+    color: var(--primary-color)
 }
 
 .information-list .information-item+.information-item {
@@ -242,6 +247,7 @@ button {
 }
 
 .information-sub-title {
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -254,26 +260,24 @@ button {
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--minor-color)
 }
 
 .work-text {
     text-align: center;
-    margin-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-color)
 }
 
 .work-list {
     display: flex;
-}
-
-.work-item {
     margin-top: 50px;
 }
+
+.work-item {}
 
 .work-list .work-item+.work-item {
     margin-left: 30px;
@@ -282,12 +286,13 @@ button {
 .team-item {
     background: #FFFFFF;
     /* material shadow v1 */
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
-
+    border: 1px solid transparent;
     margin-top: 50px;
     display: flex;
 }
@@ -297,17 +302,16 @@ button {
 }
 
 .team {
-    background: #F5F4FA
+    background: var(--secondary-color)
 }
 
 .team-title {
     text-align: center;
-    margin-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-color)
 }
 
 .team-sub-title {
@@ -330,15 +334,10 @@ button {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575
+    color: var(--minor-color)
 }
 
 /*1 page */
-.example {
-
-    margin-top: 94px;
-
-}
 
 .portfolio {
 
@@ -352,6 +351,7 @@ button {
     /* identical to box height, or 162% */
     color: #212121;
     justify-content: center;
+
 
 }
 
@@ -374,7 +374,7 @@ button {
 
 
     cursor: pointer;
-    background: #F5F4FA;
+    background-color: #f5f4fa;
     border: 1px solid transparent;
 
 
@@ -391,7 +391,7 @@ button {
     font-size: 16px;
     line-height: 1.62;
     /* identical to box height, or 162% */
-    color: #FFFFFF;
+    color: #FFFFFF
 }
 
 /* кнопки */
@@ -406,28 +406,31 @@ button {
     margin-top: 56px;
 }
 
-
-
-
+.main-item {
+    width:calc((100%-90px)/3);
+    outline: 1px solid #eeeeee;    
+}
 
 .main-title {
-
+    padding-left: 24px;
+    padding-right: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--primary-color)
 }
 
 
 .main-text {
+    padding: 0px 24px 20px 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--minor-color)
 }
 
 /* подвал */
@@ -438,7 +441,7 @@ button {
 .f-logo {
     display: block;
     padding-top: 60px;
-    padding-bottom: 20px;
+
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -446,7 +449,7 @@ button {
     line-height: 1.19;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color)
 }
 
 .fo-logo {
@@ -457,7 +460,7 @@ button {
     line-height: 1.19;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--normal-color)
 }
 
 .fotter-text {
@@ -467,7 +470,7 @@ button {
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--normal-color)
 }
 
 .fotter-nav {
@@ -481,11 +484,12 @@ button {
 }
 
 .fotter-adress {
+    font-style: normal;
     padding-bottom: 60px;
 }
 
 .fotter-nav:hover {
-    color: #2196F3;
+    color: var(--accent-color)
 }
 
 .fotter-adress li+li {
@@ -493,5 +497,5 @@ button {
 }
 
 .fotter-nav:focus {
-    color: #2196F3;
+    color: var(--accent-color)
 }
