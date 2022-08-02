@@ -46,7 +46,6 @@ button {
 }
 
 
-
 /* Head */
 .container {
     margin: 0 auto;
@@ -221,6 +220,7 @@ button {
 
 }
 
+.start-button:hover:
 .start-button:focus {
     background: rgba(33, 150, 243, 1);
     color: #FFFFFF;
