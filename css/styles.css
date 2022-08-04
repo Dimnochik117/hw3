@@ -39,12 +39,12 @@ button {
     cursor: pointer;
 
 }
+
 .img{
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 
 /* Head */
 .container {
@@ -65,7 +65,7 @@ button {
 }
 
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
     background-color: var(--normal-color)
 }
 
@@ -229,7 +229,11 @@ button {
 
 /* button */
 
-.information {}
+.information-item{
+max-width: 270pxs;
+}
+
+
 
 .information-list {
 
@@ -315,7 +319,6 @@ button {
 }
 
 .team-sub-title {
-    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -324,10 +327,13 @@ button {
     letter-spacing: 0.03em;
     color: #212121;
 }
-
+.text{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-text {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -407,7 +413,7 @@ button {
 }
 
 .main-item {
-    width:calc((100%-90px)/3);
+    width:calc((100%-60px)/3);
     outline: 1px solid #eeeeee;    
 }
 
@@ -435,12 +441,13 @@ button {
 
 /* подвал */
 .fotter {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 
 .f-logo {
     display: block;
-    padding-top: 60px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -462,9 +469,11 @@ button {
     letter-spacing: 0.03em;
     color: var(--normal-color)
 }
-
-.fotter-text {
+.fotter-adress {
     margin-top: 20px;
+    font-style: normal;
+}
+.fotter-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -474,6 +483,7 @@ button {
 }
 
 .fotter-nav {
+    margin-top: 9px;
 
     font-weight: 400;
     font-size: 14px;
@@ -483,16 +493,13 @@ button {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.fotter-adress {
-    font-style: normal;
-    padding-bottom: 60px;
-}
+
 
 .fotter-nav:hover {
     color: var(--accent-color)
 }
 
-.fotter-adress li+li {
+.fotter-nav li+li {
     margin-top: 9px;
 }
 
