@@ -493,16 +493,13 @@ max-width: 270pxs;
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-.fotter-nav:hover {
-    color: var(--accent-color)
-}
-
 .fotter-nav li+li {
     margin-top: 9px;
 }
 
 .fotter-nav:focus {
+    color: var(--accent-color)
+}
+.fotter-nav:hover {
     color: var(--accent-color)
 }
