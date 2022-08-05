@@ -40,7 +40,7 @@ button {
 
 }
 
-.img{
+.img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -92,7 +92,7 @@ button {
 
 .navig {
     display: flex;
-    margin-left:auto
+    margin-left: auto
 }
 
 .navig .item+.item {
@@ -117,7 +117,6 @@ button {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.71;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--accent-color)
 }
@@ -130,7 +129,6 @@ button {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.71;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--primary-color)
 }
@@ -202,9 +200,7 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* or 136% */
-
-    color: #FFFFFF;
+    color: var(--normal-color)
 }
 
 .start-button {
@@ -220,8 +216,7 @@ button {
 
 }
 
-.start-button:hover:
-.start-button:focus {
+.start-button:hover: .start-button:focus {
     background: rgba(33, 150, 243, 1);
     color: #FFFFFF;
 }
@@ -229,8 +224,8 @@ button {
 
 /* button */
 
-.information-item{
-max-width: 270pxs;
+.information-item {
+    max-width: 270pxs;
 }
 
 
@@ -262,7 +257,6 @@ max-width: 270pxs;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: var(--minor-color)
 }
@@ -289,7 +283,7 @@ max-width: 270pxs;
 
 .team-item {
     background: #FFFFFF;
-    /* material shadow v1 */
+
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -319,25 +313,29 @@ max-width: 270pxs;
 }
 
 .team-sub-title {
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
+
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
-.text{
+
+.text {
+
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .team-text {
-    
+    margin-top: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
+
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--minor-color)
@@ -354,7 +352,7 @@ max-width: 270pxs;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height, or 162% */
+
     color: #212121;
     justify-content: center;
 
@@ -371,7 +369,7 @@ max-width: 270pxs;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height, or 162% */
+
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -396,7 +394,7 @@ max-width: 270pxs;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height, or 162% */
+
     color: #FFFFFF
 }
 
@@ -413,30 +411,34 @@ max-width: 270pxs;
 }
 
 .main-item {
-    width:calc((100%-60px)/3);
-    outline: 1px solid #eeeeee;    
+    width: calc((100%-60px)/3);
+
 }
 
 .main-title {
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    /* identical to box height, or 200% */
+
     letter-spacing: 0.06em;
     color: var(--primary-color)
 }
 
 
 .main-text {
-    padding: 0px 24px 20px 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: var(--minor-color)
+}
+
+.main-group {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 /* подвал */
@@ -454,7 +456,6 @@ max-width: 270pxs;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--accent-color)
 }
@@ -465,19 +466,19 @@ max-width: 270pxs;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--normal-color)
 }
+
 .fotter-adress {
     margin-top: 20px;
     font-style: normal;
 }
+
 .fotter-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: var(--normal-color)
 }
@@ -488,7 +489,6 @@ max-width: 270pxs;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -500,6 +500,7 @@ max-width: 270pxs;
 .fotter-nav:focus {
     color: var(--accent-color)
 }
+
 .fotter-nav:hover {
     color: var(--accent-color)
 }
