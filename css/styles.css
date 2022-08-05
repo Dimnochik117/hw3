@@ -40,13 +40,14 @@ button {
 
 }
 
+
+/* Head */
 .img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* Head */
 .container {
     margin: 0 auto;
     max-width: 1200px;
