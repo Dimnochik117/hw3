@@ -42,7 +42,7 @@ button {
 
 
 /* Head */
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -371,23 +371,15 @@ button {
     font-size: 16px;
     line-height: 1.62;
 
-
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px;
 
-
-
     cursor: pointer;
     background-color: #f5f4fa;
     border: 1px solid transparent;
-
-
-
-
+    border-radius: 4px;
 }
-
-.portfolio-button {}
 
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -411,9 +403,8 @@ button {
     margin-top: 56px;
 }
 
-.main-item {
+.main-link {
     width: calc((100%-60px)/3);
-
 }
 
 .main-title {
